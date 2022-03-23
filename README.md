@@ -31,9 +31,8 @@ User stories allow me to ensure that each product feature is focused and relevan
 
 The risk assessment document allows me to priortise issues and problems that may occur during the project.
 
-<image>
-[github-link]: <url>
-  
+![Risk](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Risk%20Assessment.PNG)
+    
 ### Trello
   
 ![Trello](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Trello%20Board.PNG)
@@ -41,3 +40,7 @@ The risk assessment document allows me to priortise issues and problems that may
 ### Git
 
 <image>
+  
+ ## Database Setup
+  
+  
