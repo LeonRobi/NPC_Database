@@ -43,4 +43,36 @@ The risk assessment document allows me to priortise issues and problems that may
   
  ## Database Setup
   
+ ## Postman
+  
+ ### Create
+  
+  ![create](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/Create%20NPC.PNG)
+  
+ ### Read
+  
+  ![read](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/Read%20getNPC.PNG)
+  
+ ### Update
+  
+  ![update](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/update%20npc.PNG)
+  ![updateresult](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/update%20result%20age%20increase%20and%20alignment%20change.PNG)
+  
+ ### Delete
+  
+  ![delete](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/delete%20npc.PNG)
+  ![deleteResult](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/delete%20result.PNG)
+  
+ ### Custom Queries
+  
+ ## Get Age Greater Than
+  
+  ![50](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/getAgeGreaterThan50.PNG)
+  ![300](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/ageGreaterThan300.PNG)
+  
+ ## Get Race
+  
+  ![human](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/getrace%20human.PNG)
+  ![gnome](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/get%20race%20gnome.PNG)
+  
   
