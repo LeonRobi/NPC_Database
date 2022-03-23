@@ -43,7 +43,9 @@ The risk assessment document allows me to priortise issues and problems that may
   
  ## Database Setup
   
- ## Postman
+ ## Postman CRUD
+  
+  The following screenshots demonstrate CRUD functionality within the app using Postman. 
   
  ### Create
   
@@ -63,16 +65,20 @@ The risk assessment document allows me to priortise issues and problems that may
   ![delete](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/delete%20npc.PNG)
   ![deleteResult](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/delete%20result.PNG)
   
- ### Custom Queries
+ ## Custom Queries
   
- ## Get Age Greater Than
+ ### Get Age Greater Than
   
   ![50](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/getAgeGreaterThan50.PNG)
   ![300](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/ageGreaterThan300.PNG)
   
- ## Get Race
+ ### Get Race
   
   ![human](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/getrace%20human.PNG)
   ![gnome](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/get%20race%20gnome.PNG)
+  
+ ## Swagger
+  
+  In addition to postman I experimented with using 'Swagger' to do the same as postman.
   
   
