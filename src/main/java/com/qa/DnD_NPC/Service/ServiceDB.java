@@ -61,4 +61,7 @@ public class ServiceDB {
 		return repo.findDndNPCByAgeGreaterThan(age);
 	}
 	
+	public List<DndNPC> getByRace(String race) {
+		return repo.findByRace(race);
+	}
 }

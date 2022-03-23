@@ -39,11 +39,25 @@ public class ServiceTest {
 	
 	@Test
 	public void testgetbyID() {
-		Mockito.when(repo.findById(1l)).thenReturn(Optional.of(npc1Id));
+		Mockito.when(repo.findById((int) 1)).thenReturn(Optional.of(npc1Id));
 		DndNPC result = service.readbyID(1);
 		Assertions.assertEquals(npc1Id, result);
 	}
 	
+	@Test
+	public void testUpdate() {
+		Mockito.when(repo.findById((int) 1)).thenReturn(Optional.of(npc1Id));
+		DndNPC result = service.readbyID(1);
+		result.setName("Donut");
+		repo.save(result);
+		DndNPC updatedResult = service.readbyID(1);
+		Assertions.assertEquals(updatedResult, result);
+
+	}
 	
+//	@Test
+//	public void testdeleteall() {
+//		Mockito.when(repo.deleteAll())
+//	}
 
 }

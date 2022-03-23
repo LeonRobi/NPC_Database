@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.jdbc.Sql;
@@ -33,7 +34,6 @@ import com.qa.DnD_NPC.model.DndNPC;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS) 
 
 public class ControllerTest {
-	
 	
 	@Autowired
 	private MockMvc mvc;
@@ -78,12 +78,21 @@ public class ControllerTest {
 	@Test
 	public void testUpdate() throws Exception {
 
-		DndNPC npc = new DndNPC("Dennis", "Human", "Neutral Good", 25, false);
+		DndNPC npc = new DndNPC(1, "Dennis", "Human", "Neutral Good", 25, false);
 		String npcJson = mapper.writeValueAsString(npc);
 		RequestBuilder req = put("/update/1").contentType(MediaType.APPLICATION_JSON).content(npcJson);
 		ResultMatcher checkStatus = status().isAccepted();
 		ResultMatcher checkBody = content().string("Updated ID: 1");
 		mvc.perform(req).andExpect(checkStatus).andExpect(checkBody);
+	}
 	
+	@Test
+	public void testAge() throws Exception {
+		List<DndNPC> all = List.of(npc1, npc2);
+		String allJson = mapper.writeValueAsString(all);
+		RequestBuilder req = get("/getNPC/50");
+		ResultMatcher checkStatus = status().isOk();
+		ResultMatcher checkBody = content().json(allJson);
+		mvc.perform(req).andExpect(checkStatus).andExpect(checkBody);
 	}
 }

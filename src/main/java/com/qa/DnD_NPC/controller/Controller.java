@@ -46,7 +46,8 @@ public class Controller {
 	@PutMapping("/update/{id}")
 	public ResponseEntity<String> updatebyID(@PathVariable("id") int id, @RequestBody DndNPC npc) {
 		serviceDB.updatebyID(id, npc);
-		return new ResponseEntity<>("Updated ID: " + id, HttpStatus.ACCEPTED);
+		String response = "Updated ID: " + id;
+		return new ResponseEntity<>(response, HttpStatus.ACCEPTED);
 	}
 	
 	@DeleteMapping("/delete/{id}")
@@ -62,6 +63,10 @@ public class Controller {
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 	
-	
+	@GetMapping("/getrace/{race}")
+	public ResponseEntity<List<DndNPC>> getByRace(@PathVariable("race") String race) {
+		List<DndNPC> response = serviceDB.getByRace(race);
+		return new ResponseEntity<>(response, HttpStatus.OK);
+	}
 }
 
