@@ -8,7 +8,7 @@
 *point
 *point
 
-## Project Overview
+## 1. Project Overview
 
 A Java database using h2 and MySQL, implemented with CRUD functionality.
 The project uses the idea of a Dungeons and Dragons (DnD) Non player character (NPC) database for users to find and select pre-made NPC's for their games.
@@ -46,7 +46,7 @@ The risk assessment document allows me to priortise issues and problems that may
   
  Although not perfect, it has allowed me to learn and improve for future projects, in which I will have individual branches for testing and for each feature that gets added. 
   
- ## Database Setup
+ ## 2. Database Setup
   
  ## Postman CRUD
   
@@ -88,7 +88,7 @@ The risk assessment document allows me to priortise issues and problems that may
   
   ![deleteResult](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/delete%20result.PNG)
   
- ## Custom Queries
+ ## 2.1 Custom Queries
   
  ### Get Age Greater Than
   
@@ -111,7 +111,7 @@ The risk assessment document allows me to priortise issues and problems that may
   
   ![Swagger](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/swagger.PNG)
   
- ## Test Results
+ ## 3. Test Results
  
   The test results show a wide coverage of the code covering 100% in both the Service and Controller packages. 
   In addition to this, I included tests for the model covering the hashCode and equals methods.   
