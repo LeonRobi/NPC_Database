@@ -41,10 +41,10 @@ The risk assessment document allows me to priortise issues and problems that may
   
  At the start of the project, Git was one of my weakest areas that I felt needed improving. Initially I started by creating the main and dev branch with the intention of sending all work directly into the dev branch but as the project progressed I realised that it would be better to have branches for each indivudal part. As a result I started producing extra branches a little later than I had hoped as seen in the below image.
   
-  [image of git push]
-  [image of branches]
+  ![gitpush](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Git.PNG)
+  ![gitbranch](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/branching.PNG)
   
- Although not perfect, it allows me to learn and improve for future projects, in which I will have individual branches for testing and for each feature that gets added. 
+ Although not perfect, it has allowed me to learn and improve for future projects, in which I will have individual branches for testing and for each feature that gets added. 
   
  ## Database Setup
   
@@ -67,6 +67,7 @@ The risk assessment document allows me to priortise issues and problems that may
  ### Update
   
   The update feature would allow the user to update parts of the data to adapt to anything that might change. The first image shows a database entry.
+  
   ![update1](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/UpdateV2%20first.PNG)
   
   The second image demonstrates the update function changing the NPC's alignment to "Neutral Good", the age to 30 and in_use to "true".
@@ -106,13 +107,13 @@ The risk assessment document allows me to priortise issues and problems that may
   
  ## Swagger
   
-  In addition to postman I experimented with using 'Swagger' to do the same as postman.
+  In addition to postman I experimented with using 'Swagger' which would allow the user to do the same as postman without needing to download anything.
+  
+  ![Swagger](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/swagger.PNG)
   
  ## Test Results
  
   The test results show a wide coverage of the code covering 100% in both the Service and Controller packages. 
-  In addition to this, I included tests for the model covering the hashCode and equals methods. 
-  
- [Screenshot of test results]
-  
-  
+  In addition to this, I included tests for the model covering the hashCode and equals methods.   
+ 
+ ![test](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/test%20results.PNG)
