@@ -49,30 +49,53 @@ The risk assessment document allows me to priortise issues and problems that may
   
  ### Create
   
+  The first step needed was having the ability to create a "NPC" for the database which uses JSON data.
+  
   ![create](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/Create%20NPC.PNG)
   
  ### Read
+  
+  Afterwards we need the ability to read the data, which is demonstrated below.
   
   ![read](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/Read%20getNPC.PNG)
   
  ### Update
   
-  ![update](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/update%20npc.PNG)
-  ![updateresult](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/update%20result%20age%20increase%20and%20alignment%20change.PNG)
+  The update feature would allow the user to update parts of the data to adapt to anything that might change.
+  The first image shows a database entry.
+  ![update1](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/UpdateV2%20first.PNG)
+  
+  The second image demonstrates the update function changing the NPC's alignment to "Neutral Good", the age to 30 and in_use to "true".
+  
+  ![update2](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/UpdateV2.PNG)
+  
+  The third image shows the changes being reflected in the database.
+  
+  ![update3](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/Update%20V2%20final.PNG)
   
  ### Delete
   
+  The delete function works to remove data that is no longer needed. In the first image we can delete the input with an id of 1.
+  
   ![delete](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/delete%20npc.PNG)
+  
+  The next image displays the new data which has lost the NPC with id of 1.
+  
   ![deleteResult](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/delete%20result.PNG)
   
  ## Custom Queries
   
  ### Get Age Greater Than
   
+  For some custom queries I decided to choose two which would be most helpful. The first is to search for a NPC with an age greater than the input.
+  The first image displays a result when searching for ages above 50 and the second for ages above 300.
+  
   ![50](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/getAgeGreaterThan50.PNG)
   ![300](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/ageGreaterThan300.PNG)
   
  ### Get Race
+  
+  Similarly I created a query which would search specifically by race with the first image displaying results for human and the second for results displaying gnome.
   
   ![human](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/getrace%20human.PNG)
   ![gnome](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/get%20race%20gnome.PNG)
