@@ -5,8 +5,8 @@
 *Database Setup
 *Postman
 *Test Results
-*point
-*point
+*H2 Database
+*MySQL
 
 ## 1. Project Overview
 
@@ -45,10 +45,8 @@ The risk assessment document allows me to priortise issues and problems that may
   ![gitbranch](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/branching.PNG)
   
  Although not perfect, it has allowed me to learn and improve for future projects, in which I will have individual branches for testing and for each feature that gets added. 
-  
- ## 2. Database Setup
-  
- ## Postman CRUD
+    
+ ## 2. Postman CRUD
   
   The following screenshots demonstrate CRUD functionality within the app using Postman. 
   
@@ -105,7 +103,7 @@ The risk assessment document allows me to priortise issues and problems that may
   ![human](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/getrace%20human.PNG)
   ![gnome](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Postman/get%20race%20gnome.PNG)
   
- ## Swagger
+ ## 2.2 Swagger
   
   In addition to postman I experimented with using 'Swagger' which would allow the user to do the same as postman without needing to download anything.
   
@@ -117,3 +115,18 @@ The risk assessment document allows me to priortise issues and problems that may
   In addition to this, I included tests for the model covering the hashCode and equals methods.   
  
  ![test](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/test%20results.PNG)
+  
+ ## 4. H2 DataBase
+  
+  During the project I used H2 as a development and testing function within my java application. This was to avoid messing around with the MySQL database which would hold the up to date and correct data. 
+  
+  To connect to the h2 database, the localhost port was used.
+  
+  ![h2first](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/Connecing%20to%20H2%20database.PNG)
+  ![h2second](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/h2%20database.PNG)
+  
+  After using postman to send data to h2 I could view the information to ensure everything was working as it should be.
+  
+  ![h2third](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/H2%20database%20after%20posting%20information.PNG)
+  
+ ## 5. MySQL Database
