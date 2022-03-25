@@ -130,3 +130,7 @@ The risk assessment document allows me to priortise issues and problems that may
   ![h2third](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/H2%20database%20after%20posting%20information.PNG)
   
  ## 5. MySQL Database
+  
+  MySQL was used as the "production" database which would persist in holding and storing data when the java application had closed.
+  
+  ![mysql](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/MySQL%20image%201.PNG)
