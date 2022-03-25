@@ -2,6 +2,7 @@ package com.qa.DnD_NPC.model;
 
 import java.util.Objects;
 
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -123,7 +124,7 @@ public class DndNPC {
 				+ ", in_use=" + in_use + "]";
 	}
 	
-	
+	// hashcode and equals testing GOOOGLE
 	
 
 }

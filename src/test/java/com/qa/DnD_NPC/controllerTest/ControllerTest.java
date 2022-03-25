@@ -1,6 +1,7 @@
 package com.qa.DnD_NPC.controllerTest;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
+
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
@@ -15,7 +16,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.jdbc.Sql;
@@ -41,7 +41,7 @@ public class ControllerTest {
 	@Autowired
 	private ObjectMapper mapper;
 	
-	DndNPC npc1 = new DndNPC("Dennis", "Human", "Neutral Good", 25, false);
+	DndNPC npc1 = new DndNPC(1, "Testname", "testrace", "testalignment", 24, true);
 	DndNPC npc2 = new DndNPC("John", "Gnome", "Lawful evil", 57, false);
 	DndNPC npc3 = new DndNPC("Ragnar", "Dwarf", "Chaotic evil", 83, true);
 	
@@ -58,7 +58,7 @@ public class ControllerTest {
 	
 	@Test
 	public void testGet() throws Exception {
-		List<DndNPC> all = List.of(npc1, npc2);
+		List<DndNPC> all = List.of(npc1);
 		String allJson = mapper.writeValueAsString(all);
 		RequestBuilder req = get("/getNPC");
 		ResultMatcher checkStatus = status().isOk();
@@ -78,7 +78,7 @@ public class ControllerTest {
 	@Test
 	public void testUpdate() throws Exception {
 
-		DndNPC npc = new DndNPC(1, "Dennis", "Human", "Neutral Good", 25, false);
+		DndNPC npc = new DndNPC("Dennis", "Human", "Neutral Good", 25, false);
 		String npcJson = mapper.writeValueAsString(npc);
 		RequestBuilder req = put("/update/1").contentType(MediaType.APPLICATION_JSON).content(npcJson);
 		ResultMatcher checkStatus = status().isAccepted();
@@ -88,9 +88,19 @@ public class ControllerTest {
 	
 	@Test
 	public void testAge() throws Exception {
-		List<DndNPC> all = List.of(npc1, npc2);
+		List<DndNPC> all = List.of(npc1);
 		String allJson = mapper.writeValueAsString(all);
-		RequestBuilder req = get("/getNPC/50");
+		RequestBuilder req = get("/getNPC/20");
+		ResultMatcher checkStatus = status().isOk();
+		ResultMatcher checkBody = content().json(allJson);
+		mvc.perform(req).andExpect(checkStatus).andExpect(checkBody);
+	}
+	
+	@Test
+	public void testrace() throws Exception {
+		List<DndNPC> all = List.of(npc1);
+		String allJson = mapper.writeValueAsString(all);
+		RequestBuilder req = get("/getrace/testrace");
 		ResultMatcher checkStatus = status().isOk();
 		ResultMatcher checkBody = content().json(allJson);
 		mvc.perform(req).andExpect(checkStatus).andExpect(checkBody);
