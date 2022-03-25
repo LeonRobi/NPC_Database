@@ -1,17 +1,42 @@
 # QA-DFESW13 Final Project
 ## Contents
 
-*Project Overview
-*Database Setup
-*Postman
-*Test Results
-*H2 Database
-*MySQL
+[Project Overview](https://github.com/LeonRobi/NPC_Database/tree/main#1-project-overview)
+
+[Postman](https://github.com/LeonRobi/NPC_Database/tree/main#2-postman-crud)
+
+[Test Results](https://github.com/LeonRobi/NPC_Database/tree/main#3-test-results)
+
+[H2 Database](https://github.com/LeonRobi/NPC_Database/tree/main#4-h2-database)
+
+[MySQL](https://github.com/LeonRobi/NPC_Database/tree/main#5-mysql-database)
+
+Instructions for use
 
 ## 1. Project Overview
 
-A Java database using h2 and MySQL, implemented with CRUD functionality.
+### Why are we doing this?
+
+The project is the final piece in the QA Software development bootcamp which is used to demonstrate an ability to create a Java database using h2 and MySQL, implemented with CRUD functionality.
 The project uses the idea of a Dungeons and Dragons (DnD) Non player character (NPC) database for users to find and select pre-made NPC's for their games.
+
+### How I expected the challenge to go.
+
+I had expected this challenge to build upon the knowledge gained in the previous weeks of learning and thus expected small hurdles that I'd need to overcome but would overall be a task that would operate smoothly.
+
+I had originally set the goal of building a simple front end for the application along side the project itself but realised that this would unfortunately be out of scope after I started having trouble getting some of the testing to work. Once the testing was completed I didn't want to create a front end that I wouldn't be happy with and focused on ensuring all other aspects of the project were up to spec.
+
+### What went well? / What didn't go as planned?
+
+
+
+### Possible improvements for future revisions of the project.
+
+There are many improvements that I could make for future projects. As seen below I produced a mock Entity relationship diagram that I wish I could have implemented along side the project which would provide significant use cases for a user that would require the database application. 
+
+In addition, I spent some time researching Lombok and exploring how that could help remove boiler plate code from the application to simplify one aspect but didn't feel confident in removing the foundational code with the time restraints. 
+
+Finally as I mention below in the Git section, I will in the future ensure my branches are better organised and represent one part of each addition to the code. This is something that became clear to me early on in the project and hence why you will see some branches existing for each feature but does not represent the full extent of how I would organise in the future.
 
 ### Entity Relationship Diagram 
 
@@ -134,3 +159,11 @@ The risk assessment document allows me to priortise issues and problems that may
   MySQL was used as the "production" database which would persist in holding and storing data when the java application had closed.
   
   ![mysql](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/MySQL%20image%201.PNG)
+  
+## 6. Instructions on running the application
+  
+  Java 
+  
+  Instructions for use
+  
+
