@@ -1,6 +1,9 @@
 package com.qa.DnD_NPC.servicesTest;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import java.util.Optional;
+
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -23,7 +26,7 @@ public class ServiceTest {
 	private ServiceDB service;
 	
 	
-	DndNPC npc1 = new DndNPC("Dennis", "Human", "Neutral Good", 25, false);
+	DndNPC npc1 = new DndNPC("Testname", "testrace", "testalignment", 24, true);
 	DndNPC npc2 = new DndNPC("John", "Gnome", "Lawful evil", 57, false);
 	DndNPC npc3 = new DndNPC("Ragnar", "Dwarf", "Chaotic evil", 83, true);
 	
@@ -52,12 +55,18 @@ public class ServiceTest {
 		repo.save(result);
 		DndNPC updatedResult = service.readbyID(1);
 		Assertions.assertEquals(updatedResult, result);
+		//Mockito.verify(repo, Mockito.never()).flush();
 
 	}
 	
-//	@Test
-//	public void testdeleteall() {
-//		Mockito.when(repo.deleteAll())
-//	}
-
+	@Test
+	public void testdeleteID() {
+//		Mockito.when(repo.deleteById((int) 1)).thenReturn(Optional.of(npc1Id));
+//		boolean result = service.deleteID(1);
+//		Assertions.assertTrue(result);
+		int id = 1;
+		assertThat(service.deleteID(id)).isTrue();
+		Mockito.verify(repo, Mockito.times(1)).deleteById(id);
+	}
+	
 }

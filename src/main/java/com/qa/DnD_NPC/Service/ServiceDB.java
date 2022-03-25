@@ -52,10 +52,10 @@ public class ServiceDB {
 		return true;
 	}
 	
-	public boolean deleteall() {
-		repo.deleteAll();
-		return true;
-	}
+//	public boolean deleteall() {
+//		repo.deleteAll();
+//		return true;
+//	}
 
 	public List<DndNPC> getByAgeGreaterThan(int age) {
 		return repo.findDndNPCByAgeGreaterThan(age);

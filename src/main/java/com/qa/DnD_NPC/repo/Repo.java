@@ -7,8 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.qa.DnD_NPC.model.DndNPC;
 
-
-
 public interface Repo extends JpaRepository<DndNPC, Integer>{
 	
 	
