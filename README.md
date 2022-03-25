@@ -49,8 +49,13 @@ This would include stats for each NPC in the database. Ideally I would have set 
 
 User stories allow me to ensure that each product feature is focused and relevant to what the end user would require.
   
- <add user stories>
-  
+As a customer I want to create new NPC’s to be added to the database so that I can continuously keep track of each addition.
+
+As a customer I want to delete old NPC’s from the database so that I can remove any redundant information.
+
+As a customer I want to update specific attributes of a NPC so that I can ensure everything is up to date.
+
+As a customer I want to be able to read all NPCs in the database so that I can use them for reference. 
 
 ### Risk Assessment 
 
