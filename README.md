@@ -11,8 +11,6 @@
 
 [MySQL](https://github.com/LeonRobi/NPC_Database/tree/main#5-mysql-database)
 
-Instructions for use
-
 ## 1. Project Overview
 
 ### Why are we doing this?
@@ -28,7 +26,20 @@ I had originally set the goal of building a simple front end for the application
 
 ### What went well? / What didn't go as planned?
 
+#### What went well?
 
+- All CRUD functionality implemented without issue
+- Custom CRUD functionality implemented
+- Testing for Service class and Controller class at 100%
+- Use of both H2 and MySQL
+- Exploration into different ways of producing the project
+- Time management
+- Planning process
+
+#### What didn't go as planned?
+
+- Git management (although later improved upon)
+- Some stretch goals I'd hope to achieve
 
 ### Possible improvements for future revisions of the project.
 
@@ -164,11 +175,5 @@ The risk assessment document allows me to priortise issues and problems that may
   MySQL was used as the "production" database which would persist in holding and storing data when the java application had closed.
   
   ![mysql](https://github.com/LeonRobi/NPC_Database/blob/Images/DndNPC_Images/MySQL%20image%201.PNG)
-  
-## 6. Instructions on running the application
-  
-  Java 
-  
-  Instructions for use
-  
+
 
